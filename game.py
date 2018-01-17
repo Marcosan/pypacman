@@ -42,7 +42,7 @@ def creditos():
 
 def salir_del_programa():
     import sys
-    print " Gracias por utilizar este programa."
+    print (" Gracias por utilizar este programa.")
     sys.exit(0)
 
 def set_opcion_enter(a):
@@ -86,8 +86,8 @@ class Game:
         self.monster_sprites = pygame.sprite.RenderUpdates()
         self.fruta_sprites = pygame.sprite.RenderUpdates()
 
-        for y in xrange(len(layout)):
-            for x in xrange(len(layout[y])):
+        for y in range(len(layout)):
+            for x in range(len(layout[y])):
                 """Get the center point for the rects"""
                 centerPoint = [(x*BLOCK_SIZE)+x_offset,(y*BLOCK_SIZE+y_offset)]
                 if layout[y][x]==level1.BLOCKH:
